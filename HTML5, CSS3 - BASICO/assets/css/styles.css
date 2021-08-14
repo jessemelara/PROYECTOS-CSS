@@ -1,0 +1,382 @@
+/* FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/WebSymbols-Regular/WebSymbols-Regular.svg#WebSymbolsRegular")
+      format("svg"),
+    url("../fonts/WebSymbols-Regular/WebSymbols-Regular.eot");
+  src: url("../fonts/WebSymbols-Regular/WebSymbols-Regular.eot#iefix")
+      format("embed"),
+    url("../fonts/WebSymbols-Regular/WebSymbols-Regular.woff") format("woff"),
+    url("../fonts/WebSymbols-Regular/WebSymbols-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FORMATO GENERAL */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("../images/pattern.jpg");
+  background-attachment: fixed;
+}
+
+/* LIMPIAR FLOTADOS */
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+/* ENLACES */
+a {
+  color: #33a9dc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1572b6;
+  text-decoration: underline;
+  transition: all 300ms;
+}
+
+/* FORMULARIOS */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  border: 1px solid #c9c9c9;
+  box-shadow: 0px 0px 1px #ccc inset;
+  background: white;
+  padding: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: gray;
+  transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border: 3px solid #1572b6;
+  color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+  display: block;
+  border: 1px solid #1572b6;
+  border-radius: 2px;
+  width: 60px;
+  padding: 3px;
+  background-color: #33a9dc;
+  color: #eee;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  box-shadow: 0px 0px 2px gray;
+  text-decoration: underline;
+}
+
+/* HEADER */
+#header {
+  width: 100%;
+  height: 250px;
+  margin: 0px auto;
+}
+
+#header #logo {
+  width: 770px;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+
+#header #logo img {
+  display: block;
+  text-align: center;
+  width: 140px;
+  margin: 0px auto;
+}
+
+#header h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #1572b6;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  text-shadow: 2px 2px 0px rgb(100, 94, 94);
+}
+
+#header h1 a {
+  color: #1572b6;
+  text-decoration: none;
+}
+
+#header h1 a:hover {
+  text-shadow: 2px 2px 0px rgb(100, 94, 94), 0px 2px 3px #1572b6;
+}
+
+/* BARRA DE NAVEGACION */
+#menu {
+  width: 100%;
+  height: 40px;
+  margin: 0px auto;
+  background: #333;
+  box-shadow: 0px 0px 2px gray;
+  color: white;
+  font-size: 15px;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0px auto;
+  width: 1160px;
+}
+
+#menu > ul > li {
+  line-height: 40px;
+  float: left;
+  border-right: 1px solid gray;
+  transition: all 300ms;
+}
+
+#menu > ul > li:hover {
+  background-color: #33a9dc;
+  text-decoration: underline;
+  box-shadow: 0px 0px 4px #1572b6 inset;
+}
+
+#menu > ul > li > a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#menu > ul > li > a:first-child {
+  border-left: 1px solid gray;
+}
+
+/* MENUS DESPLEGABLE */
+#menu > ul > li > ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+  z-index: 1;
+}
+
+#menu > ul > li:hover > ul {
+  display: block;
+}
+
+#menu > ul > li:hover > ul > li {
+  background-color: #f2f1f0;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 8px;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+#menu > ul > li:hover > ul > li > a {
+  text-decoration: none;
+  color: #666;
+  text-align: left;
+  transition: all 300ms;
+}
+
+#menu > ul > li:hover > ul > li:hover {
+  background: rgb(202, 199, 199);
+  box-shadow: 0px 0px 2px #666 inset;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* CONTENIDO */
+#content {
+  width: 1250px;
+  margin: 0px auto;
+}
+
+/* SIDEBAR */
+#sidebar,
+#quote {
+  width: 200px;
+  float: left;
+  margin: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 2px #ccc;
+}
+
+#quote {
+  width: 180px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#sidebar .widget {
+  display: block;
+  width: 180px;
+  margin: 5px auto;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  border-bottom: 1px dashed #333;
+}
+
+#sidebar .widget:last-child {
+  margin-bottom: 20px;
+}
+
+#sidebar h3 {
+  display: block;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: #f2f3f2;
+  border-bottom: 1px solid #ccc;
+}
+#sidebar > div:nth-child(2) > h3 {
+  color: rgb(150, 2, 46);
+}
+
+#sidebar > div:nth-child(3) > h3 {
+  color: rgb(61, 150, 2);
+}
+
+#sidebar li {
+  margin: 8px 0px 5px 20px;
+  list-style: square;
+}
+
+/* FORMULARIOS SIDEBAR */
+#sidebar div label,
+#sidebar div input[type="text"],
+#sidebar div input[type="email"],
+#sidebar div input[type="password"],
+#sidebar div a {
+  display: block;
+  width: 95%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#sidebar div input[type="button"],
+#sidebar div input[type="submit"],
+#sidebar div input[type="reset"],
+#sidebar div button {
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+#sidebar input,
+#sidebar label {
+  margin: 0px auto;
+  text-align: center;
+}
+
+/* SECCIONES */
+#sections {
+  float: right;
+  width: 75%;
+  margin-right: 20px;
+}
+
+#sections .title {
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#sections > section:nth-child(2) > .title {
+  color: rgb(150, 2, 46);
+}
+
+#sections > section:nth-child(3) > .title {
+  color: rgb(163, 134, 3);
+}
+
+#sections section {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 4px #c9c9c9;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#sections .article {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#sections .date {
+  color: gray;
+  font-size: 14px;
+}
+
+/* STICKERS */
+#sections .stickerOne,
+#sections .stickerTwo {
+  position: absolute;
+  margin-top: -37px;
+}
+
+#sections .stickerTwo {
+  margin-left: 860px;
+}
+
+/* ICONO */
+.icon {
+  font-family: "icons";
+  float: left;
+  margin-right: 7px;
+  margin-top: -3px;
+}
+
+/* HISTORICO */
+#history {
+  text-align: right;
+  text-transform: uppercase;
+  background-color: white;
+  margin-top: 40px;
+  margin-left: 978px;
+  margin-right: 20px;
+}
+
+/* PIE DE PAGINA */
+#footer {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0px 0px 3px gray;
+}
