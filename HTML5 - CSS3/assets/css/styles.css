@@ -1,4 +1,17 @@
+/* FUENTES */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/WebSymbols-Regular/WebSymbols-Regular.svg#WebSymbolsRegular")
+      format("svg"),
+    url("../fonts/WebSymbols-Regular/WebSymbols-Regular.eot");
+  src: url("../fonts/WebSymbols-Regular/WebSymbols-Regular.eot#iefix")
+      format("embed"),
+    url("../fonts/WebSymbols-Regular/WebSymbols-Regular.woff") format("woff"),
+    url("../fonts/WebSymbols-Regular/WebSymbols-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* FORMATO GENERAL */
 
@@ -189,14 +202,13 @@ button:hover {
 #content {
   border: 2px solid red;
   width: 1250px;
-  min-height: 1100px;
+  min-height: 1375px;
   margin: 0px auto;
 }
 
 /* SIDEBAR */
 #sidebar,
 #quote {
-  clear: both;
   width: 200px;
   float: left;
   margin: 30px;
@@ -274,4 +286,71 @@ button:hover {
 #sidebar label {
   margin: 0px auto;
   text-align: center;
+}
+
+/* SECCIONES */
+#sections {
+  border: 3px solid yellowgreen;
+  float: right;
+  width: 75%;
+  margin-right: 20px;
+}
+
+#sections .title {
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#sections > section:nth-child(2) > .title {
+  color: rgb(150, 2, 46);
+}
+
+#sections > section:nth-child(3) > .title {
+  color: rgb(163, 134, 3);
+}
+
+#sections section {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 4px #c9c9c9;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#sections .article {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#sections .date {
+  color: gray;
+  font-size: 14px;
+}
+
+/* STICKERS */
+#sections .stickerOne,
+#sections .stickerTwo {
+  position: absolute;
+  margin-top: -37px;
+}
+
+#sections .stickerTwo {
+  margin-left: 860px;
+}
+
+/* ICONO */
+.icon {
+  font-family: "icons";
+  float: left;
+  margin-right: 7px;
+  margin-top: -3px;
 }
