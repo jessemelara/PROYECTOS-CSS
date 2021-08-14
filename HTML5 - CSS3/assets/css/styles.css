@@ -23,7 +23,13 @@
 
 body {
   background-image: url("../images/pattern.jpg");
-  border: 3px solid blue;
+  background-attachment: fixed;
+}
+
+/* LIMPIAR FLOTADOS */
+.clearfix {
+  float: none;
+  clear: both;
 }
 
 /* ENLACES */
@@ -200,9 +206,7 @@ button:hover {
 
 /* CONTENIDO */
 #content {
-  border: 2px solid red;
   width: 1250px;
-  min-height: 1375px;
   margin: 0px auto;
 }
 
@@ -290,7 +294,6 @@ button:hover {
 
 /* SECCIONES */
 #sections {
-  border: 3px solid yellowgreen;
   float: right;
   width: 75%;
   margin-right: 20px;
@@ -353,4 +356,28 @@ button:hover {
   float: left;
   margin-right: 7px;
   margin-top: -3px;
+}
+
+/* HISTORICO */
+#history {
+  text-align: right;
+  text-transform: uppercase;
+  background-color: white;
+  margin-top: 40px;
+  margin-left: 978px;
+  margin-right: 20px;
+}
+
+/* PIE DE PAGINA */
+#footer {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0px 0px 3px gray;
 }
