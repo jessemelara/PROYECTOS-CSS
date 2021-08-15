@@ -6,7 +6,7 @@
 
 /* TARJETAS */
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
-/* font-family: 'Gruppo', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap");
 
 /* SECCION PRINCIPAL */
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
@@ -127,4 +127,46 @@ body {
 	letter-spacing: 2px;
 	text-align: center;
 	text-shadow: 3px 3px 2px #343b5e;
+}
+
+/* TARJETAS */
+.card {
+	width: 206px;
+	height: 305px;
+	overflow: hidden;
+	margin: 17px;
+	margin-top: 40px;
+	float: left;
+	box-shadow: 1px 1px 2px #ddd;
+	background-color: white;
+	cursor: pointer;
+	transition: all 300ms;
+}
+
+.card .icon {
+	display: block;
+	width: 100%;
+	height: 130px;
+	font-size: 50px;
+	font-family: "icons";
+	line-height: 110px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+.card .category {
+	width: 100%;
+	height: 50px;
+	font-size: 22px;
+	font-family: "Gruppo", cursive;
+	text-shadow: 1px 0px 1px #343b5e;
+	text-align: center;
+	color: #336a89;
+}
+
+.card .description {
+	margin: 1px auto;
+	font-family: "Atkinson Hyperlegible", sans-serif;
+	text-align: center;
+	color: #343b5e;
 }
