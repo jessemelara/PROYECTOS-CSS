@@ -47,14 +47,14 @@ body {
 #header {
 	width: 100%;
 	height: 70px;
-	background-color: #343b5e;
+	background-color: #284180;
 	color: white;
 }
 
 #logo {
 	float: left;
 	width: 200px;
-	background-color: #336a89;
+	background-color: #2b79a4;
 	margin-top: 8px;
 	text-align: center;
 	letter-spacing: 1px;
@@ -106,7 +106,7 @@ body {
 }
 
 #menu ul li a:hover {
-	color: #49aa99;
+	color: #6fc7a9;
 	transform: scale(1.1, 1.1);
 }
 
@@ -116,7 +116,7 @@ body {
 	height: 100px;
 	border: 10px solid white;
 	box-shadow: 0px 0px 2px gray;
-	background-color: #49aa99;
+	background-color: #6fc7a9;
 	margin: 20px auto;
 }
 
@@ -129,7 +129,7 @@ body {
 	font-family: "Gruppo", cursive;
 	letter-spacing: 2px;
 	text-align: center;
-	text-shadow: 3px 3px 2px #343b5e;
+	text-shadow: 4px 3px 2px #2b79a4;
 }
 
 /* TARJETAS */
@@ -164,7 +164,8 @@ body {
 	font-family: "Gruppo", cursive;
 	text-shadow: 1px 0px 1px #343b5e;
 	text-align: center;
-	color: #336a89;
+	color: #284180;
+	text-shadow: 1px 0px 1px #2b79a4;
 }
 
 .card .description {
@@ -191,11 +192,13 @@ body {
 	margin-bottom: 15px;
 	font-size: 22px;
 	font-family: "Atkinson Hyperlegible", sans-serif;
+	color: #284180;
 	line-height: 50px;
 	letter-spacing: 1px;
 	background-color: #bec9cb;
 	box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f,
 		3px 4px 0px #393d3f;
+	text-shadow: 2px 0px 1px white;
 }
 
 #search {
@@ -295,7 +298,7 @@ body {
 	margin-left: 13px;
 	margin-right: 12px;
 	margin-bottom: 20px;
-	background: linear-gradient(to bottom, #53c7b2 0%, #49aa99 100%);
+	background: linear-gradient(to bottom, #6fc7a9 0%, #49aa99 100%);
 	border: 1px solid #028b72;
 	color: white;
 	font-size: 16px;
@@ -340,4 +343,105 @@ body {
 
 #sponsors {
 	height: 185px;
+}
+
+/* ARTICULOS */
+#articles {
+	width: 860px;
+	float: left;
+}
+
+#articles h2 {
+	display: block;
+	width: 100%;
+	height: 75px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	line-height: 75px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: "Oxygen", sans-serif;
+	color: #284180;
+	font-weight: bold;
+	letter-spacing: 2px;
+	background-color: #bec9cb;
+	box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f,
+		3px 4px 0px #393d3f;
+	text-shadow: 2px 0px 1px white;
+}
+
+#articles article {
+	width: 97%;
+	height: auto;
+	margin: 40px auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: white;
+	font-family: "Atkinson Hyperlegible", sans-serif;
+	box-shadow: 1px 1px 2px #ddd;
+	border-radius: 0px 0px 0px 15px;
+}
+
+#articles article h4 {
+	display: block;
+	font-size: 23px;
+	margin: 3px;
+}
+
+#articles article h4 a {
+	text-decoration: none;
+	color: #2b79a4;
+	transition: all 300ms;
+}
+
+#articles article h4 a:hover {
+	text-decoration: underline;
+	color: #f26173;
+}
+
+#articles .data {
+	float: right;
+	margin: -10px;
+	padding: 4px;
+	color: white;
+	font-size: 13px;
+	line-height: 30px;
+	background-color: #393d3f;
+	border-radius: 0px 0px 0px 5px;
+}
+
+#articles .data span {
+	margin: 6px;
+}
+
+#articles article p {
+	margin-top: 10px;
+	margin-left: 7px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+#blog {
+	height: 100px;
+	margin-top: 60px;
+	line-height: 100px;
+	text-align: center;
+}
+
+#blog a {
+	/* display: block; */
+	font-size: 40px;
+	color: #284180;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 2px 0px 2px #2b79a4;
+	transition: all 300ms;
+}
+
+#blog a:hover {
+	color: #6fc7a9;
+	font-weight: bold;
+	text-shadow: 2px 0px 2px #2b79a4;
 }
