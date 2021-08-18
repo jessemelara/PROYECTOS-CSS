@@ -231,6 +231,10 @@ body {
 	transition: all 300ms;
 }
 
+.card:hover {
+	background: #284180;
+}
+
 .card .icon {
 	display: block;
 	width: 100%;
@@ -240,6 +244,22 @@ body {
 	line-height: 110px;
 	text-align: center;
 	margin: 0px auto;
+	transition: all 300ms;
+}
+
+.card:hover .icon {
+	color: #6cdafa;
+	font-size: 70px;
+	animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon {
+	from {
+		transform: translateY(-200%);
+	}
+	to {
+		transform: translateY(0%);
+	}
 }
 
 .card .category {
@@ -247,10 +267,27 @@ body {
 	height: 50px;
 	font-size: 22px;
 	font-family: "Gruppo", cursive;
-	text-shadow: 1px 0px 1px #343b5e;
 	text-align: center;
 	color: #3142be;
 	text-shadow: 1px 0px 1px #2b79a4;
+	transition: all 300ms;
+}
+
+.card:hover .category {
+	color: #6cdafa;
+	text-shadow: 1px 0px 2px white;
+	animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory {
+	from {
+		transform: translateY(-300%);
+		color: #3142be;
+	}
+	to {
+		transform: translateY(0%);
+		color: #6cdafa;
+	}
 }
 
 .card .description {
@@ -258,6 +295,23 @@ body {
 	font-family: "Atkinson Hyperlegible", sans-serif;
 	text-align: center;
 	color: #343b5e;
+	transition: all 300ms;
+}
+
+.card:hover .description {
+	color: white;
+	animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription {
+	from {
+		transform: translateX(-300%);
+		color: #343b5e;
+	}
+	to {
+		transform: translateX(0%);
+		color: white;
+	}
 }
 
 /* SIDEBAR */
