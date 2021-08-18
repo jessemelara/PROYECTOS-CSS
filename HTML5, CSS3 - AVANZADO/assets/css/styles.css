@@ -165,6 +165,20 @@ body {
 	box-shadow: 0px 0px 2px gray;
 	background-color: #59b2a8;
 	margin: 20px auto;
+	overflow: hidden;
+	animation: backBanner 4s linear infinite;
+}
+
+@keyframes backBanner {
+	0% {
+		background-color: #2b79a4;
+	}
+	50% {
+		background-color: #00b1aa;
+	}
+	100% {
+		background-color: #2b79a4;
+	}
 }
 
 #banner h1 {
@@ -177,6 +191,30 @@ body {
 	letter-spacing: 2px;
 	text-align: center;
 	text-shadow: 4px 3px 2px #2b79a4;
+	animation: showText 6s linear;
+}
+
+@keyframes showText {
+	0% {
+		transform: translateX(-600%) scale(5, 5);
+		opacity: 1;
+	}
+	50% {
+		transform: translateX(600%) scale(5, 5);
+		opacity: 1;
+	}
+	75% {
+		transform: translateX(-600%) scale(5, 5);
+		opacity: 0;
+		text-shadow: none;
+		color: transparent;
+	}
+	100% {
+		transform: translateX(0%) scale(1, 1);
+		opacity: 1;
+		text-shadow: 4px 3px 2px #2b79a4;
+		color: white;
+	}
 }
 
 /* TARJETAS */
