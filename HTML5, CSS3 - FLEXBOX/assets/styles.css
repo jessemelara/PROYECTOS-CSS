@@ -15,6 +15,19 @@
   margin-bottom: 40px;
   min-height: 600px;
 }
+#container .logo {
+  flex-grow: 1;
+  flex-basis: 65%;
+  padding: 10px;
+  margin-left: 20px;
+}
+#container .logo h1 {
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35px;
+  text-shadow: 1px 1px 0px #ccc;
+}
 #container #header {
   display: flex;
   flex-direction: row;
@@ -22,19 +35,6 @@
   align-items: center;
   height: 120px;
   border: 1px solid rgba(225, 225, 226, 0.8);
-}
-#container #header #logo {
-  flex-grow: 1;
-  flex-basis: 65%;
-  padding: 10px;
-  margin-left: 20px;
-}
-#container #header #logo h1 {
-  font-family: Helvetica;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 35px;
-  text-shadow: 1px 1px 0px #ccc;
 }
 #container #header #menu {
   flex-grow: 1;
@@ -130,6 +130,28 @@
 #container #content #sidebar a:hover {
   background: #444;
   color: #eee;
+}
+#container #footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  height: 120px;
+  align-items: center;
+  border-top: 1px solid rgba(225, 225, 226, 0.8);
+}
+#container #footer .logo {
+  order: 2;
+  opacity: 0.5;
+  flex-basis: auto;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+#container #footer .info {
+  order: 1;
+  flex-grow: 1;
+  text-transform: uppercase;
+  margin-left: 20px;
+  color: #444;
 }
 
 /*# sourceMappingURL=styles.css.map */
