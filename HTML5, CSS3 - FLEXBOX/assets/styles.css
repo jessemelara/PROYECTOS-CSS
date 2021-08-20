@@ -44,7 +44,7 @@
 }
 #container #header #menu > ul {
   display: flex;
-  flex-flow: row, wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   height: 100%;
@@ -152,6 +152,134 @@
   text-transform: uppercase;
   margin-left: 20px;
   color: #444;
+}
+
+@media (max-width: 1375px) {
+  #container .logo {
+    flex-basis: 60%;
+  }
+  #container #menu {
+    flex-basis: 35%;
+  }
+}
+@media (max-width: 1277px) {
+  #container .logo {
+    flex-basis: 55%;
+  }
+  #container #menu {
+    flex-basis: 40%;
+  }
+}
+@media (max-width: 1192px) {
+  #container .logo {
+    flex-basis: 50%;
+  }
+  #container #menu {
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 1117px) {
+  #container .logo {
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 1052px) {
+  #container .logo {
+    flex-basis: 40%;
+  }
+  #container #menu {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 993px) {
+  #container #header {
+    text-align: center;
+  }
+  #container #header .logo {
+    flex-basis: 65%;
+  }
+  #container #header #menu > ul {
+    margin-top: 10px;
+    flex-basis: 30%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 768px) {
+  #container #content {
+    flex-direction: column;
+  }
+  #container #content #sidebar {
+    flex-basis: 100%;
+    margin-right: 0px;
+  }
+  #container #content #sidebar h2 {
+    text-align: center;
+  }
+  #container #content #sidebar ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  #container #content #sidebar ul li {
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #container #content #projects {
+    flex-basis: 100%;
+  }
+  #container #content #projects .project {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  #container #footer .logo {
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0px;
+  }
+  #container #footer .info {
+    order: 2;
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0px;
+  }
+}
+@media (max-width: 437px) {
+  #container .logo h1 {
+    font-size: 24px;
+  }
+  #container #header #menu ul a {
+    font-size: 14px;
+  }
+  #container #footer .info {
+    font-size: 13px;
+  }
+}
+@media (max-width: 402px) {
+  #container #header {
+    height: 190px;
+  }
+  #container #header .logo {
+    margin-left: 0px;
+    text-align: start;
+  }
+  #container #header #menu {
+    height: 80%;
+    justify-content: space-between;
+  }
+  #container #header #menu ul {
+    flex-direction: column;
+    height: 70%;
+  }
+}
+@media (max-width: 340px) {
+  #container #footer .info {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
