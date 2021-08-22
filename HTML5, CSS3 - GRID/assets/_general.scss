@@ -147,6 +147,10 @@ $border: 1px solid rgba(225, 225, 226, 0.8);
 	}
 
 	#footer {
+		display: grid;
+		grid-template-columns: 80% 20%;
+		align-items: center;
+		justify-content: baseline;
 		height: 120px;
 		align-items: center;
 		border-top: $border;
@@ -154,13 +158,11 @@ $border: 1px solid rgba(225, 225, 226, 0.8);
 		.logo {
 			order: 2;
 			opacity: 0.5;
-
 			margin-right: 20px;
 		}
 
 		.info {
 			order: 1;
-
 			text-transform: uppercase;
 			margin-left: 20px;
 			color: #444;
