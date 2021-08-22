@@ -46,12 +46,24 @@
 #container #header #menu a {
   color: #444;
   text-transform: uppercase;
-  padding: 15px;
+  padding: 20px;
   transition: all 300ms;
 }
 #container #header #menu a:hover {
   background: #ccc;
   color: white;
+}
+#container #content {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  align-items: start;
+  justify-content: space-between;
+  column-gap: 25px;
+}
+#container #content #projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 21px;
 }
 #container #content #projects .project {
   margin-right: 20px;
