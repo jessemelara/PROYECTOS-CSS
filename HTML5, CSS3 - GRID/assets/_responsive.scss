@@ -1,0 +1,287 @@
+@media (max-width: 1511px) {
+	#container {
+		#content {
+			column-gap: 20px;
+
+			#projects {
+				gap: 12px;
+			}
+		}
+	}
+}
+@media (max-width: 1467px) {
+	#container {
+		#content {
+			#projects {
+				gap: 10px;
+			}
+		}
+	}
+}
+@media (max-width: 1458px) {
+	#container {
+		#content {
+			column-gap: 12px;
+		}
+	}
+}
+@media (max-width: 1415px) {
+	#container {
+		#footer {
+			grid-template-columns: auto 27%;
+
+			.logo {
+				text-align: center;
+			}
+		}
+	}
+}
+@media (max-width: 1251px) {
+	#container {
+		#header {
+			grid-template-columns: auto 35%;
+		}
+	}
+}
+@media (max-width: 1186px) {
+	#container {
+		#header {
+			grid-template-columns: auto 40%;
+		}
+	}
+}
+@media (max-width: 1086px) {
+	#container {
+		#content {
+			grid-template-columns: 22% 1fr;
+
+			#projects {
+				grid-template-columns: repeat(auto-fill, 225px);
+			}
+		}
+	}
+}
+@media (max-width: 1056px) {
+	#container {
+		#header {
+			grid-template-columns: auto 45%;
+		}
+		#content {
+			grid-template-columns: 22% 1fr;
+
+			#projects {
+				grid-template-columns: repeat(auto-fill, 215px);
+			}
+		}
+		#footer {
+			grid-template-columns: auto 32%;
+		}
+	}
+}
+@media (max-width: 965px) {
+	#container {
+		#header {
+			grid-template-columns: auto 55%;
+		}
+		#content {
+			grid-template-columns: 25% 1fr;
+
+			#projects {
+				grid-template-columns: repeat(auto-fill, 195px);
+			}
+		}
+		#footer {
+			grid-template-columns: auto 35%;
+		}
+	}
+}
+@media (max-width: 915px) {
+	#container {
+		#content {
+			#projects {
+				grid-template-columns: repeat(auto-fill, 185px);
+			}
+		}
+	}
+}
+@media (max-width: 870px) {
+	#container {
+		#header {
+			grid-template-columns: 100%;
+			align-items: center;
+			justify-content: center;
+			height: 140px;
+			padding-bottom: 20px;
+
+			.logo {
+				text-align: center;
+			}
+
+			#menu {
+				> ul {
+					justify-items: center;
+				}
+			}
+		}
+		#content {
+			grid-template-columns: 1fr;
+
+			#sidebar {
+				margin: 0px;
+
+				h2 {
+					text-align: center;
+				}
+
+				ul {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					gap: 5px;
+				}
+			}
+			#projects {
+				grid-template-columns: repeat(2, 1fr);
+
+				.project {
+					margin-left: 10px;
+					margin-right: 10px;
+				}
+			}
+		}
+		#footer {
+			grid-template-columns: 1fr;
+			justify-items: center;
+
+			.logo {
+				order: 1;
+			}
+
+			.info {
+				order: 2;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	#container {
+		#content {
+			#sidebar {
+				ul {
+					grid-template-columns: repeat(4, 1fr);
+				}
+			}
+		}
+	}
+}
+@media (max-width: 495px) {
+	#container {
+		#content {
+			#sidebar {
+				ul {
+					gap: 10px;
+				}
+			}
+			#projects {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}
+@media (max-width: 458px) {
+	#container {
+		#content {
+			justify-content: center;
+
+			#projects {
+				grid-template-columns: 360px;
+				justify-content: center;
+			}
+		}
+	}
+}
+@media (max-width: 430px) {
+	#container {
+		.logo h1 {
+			font-size: 28px;
+		}
+		#header {
+			#menu {
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+		#content {
+			#sidebar {
+				ul {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+			#projects {
+				grid-template-columns: 310px;
+			}
+		}
+		#footer {
+			.info {
+				font-size: small;
+			}
+		}
+	}
+}
+@media (max-width: 385px) {
+	#container {
+		#header {
+			height: 200px;
+
+			.logo {
+				text-align: start;
+			}
+
+			#menu {
+				ul {
+					grid-template-columns: 1fr;
+					justify-items: start;
+				}
+			}
+		}
+		#footer {
+			.info {
+				text-align: start;
+				margin-left: 0px;
+			}
+		}
+	}
+}
+@media (max-width: 335px) {
+	#container {
+		#content {
+			#sidebar {
+				ul {
+					grid-template-columns: 1fr;
+					gap: 0px;
+
+					li {
+						padding-bottom: 5px;
+					}
+				}
+			}
+			#projects {
+				grid-template-columns: 275px;
+			}
+		}
+		#footer {
+			.info {
+				font-size: x-small;
+			}
+		}
+	}
+}
+@media (max-width: 300px) {
+	#container {
+		#content {
+			#projects {
+				grid-template-columns: 250px;
+			}
+		}
+	}
+}
