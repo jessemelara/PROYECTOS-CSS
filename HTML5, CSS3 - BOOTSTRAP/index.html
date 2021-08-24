@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS - Bootstrap</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <header class="col-md-12 mt-2">
-                <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <header class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">
                         <a class="navbar-brand text-uppercase" href="#">Master en CSS - Bootstrap</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,9 +57,132 @@
                     </div>
                 </nav>
             </header>
+            <div id="carouselExampleCaptions" class="carousel slide mt-2" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://4.bp.blogspot.com/-lt2Qa0hjES8/WQ7FTMMiZZI/AAAAAAAAAdI/2oiXbq2rVbguF85_y-f-K6BPRVbPOt3XQCLcB/s640/Amazing%2BLandscape%2BWE.jpg"
+                            class="d-block w-100" alt="..." height="550px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.teahub.io/photos/full/1-12448_forest-wallpaper-animated.jpg"
+                            class="d-block w-100" alt="..." height="550px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.wallpapers13.com/wp-content/uploads/2015/11/Tower-for-surveillance-of-forest-fire-night-nature-landscape-Wallpaper-HD-915x515.jpg"
+                            class="d-block w-100" alt="..." height="550px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-    </div>
+        <div class="row mt-3 col-md-10">
+            <h2>Contenido del sitio web</h2>
+            <hr />
+            <div class="card col-2 p-0 mb-3" style="width: 18rem;">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/1800852064711433998/B4D121986254F16F353654D0FF458439A77BEFF3/?imw=450&impolicy=Letterbox"
+                    class="card-img-top" alt="..." height="150px">
+                <div class="card-body">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col-2 p-0 mb-3" style="width: 18rem;">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/1800852064711433998/B4D121986254F16F353654D0FF458439A77BEFF3/?imw=450&impolicy=Letterbox"
+                    class="card-img-top" alt="..." height="150px">
+                <div class="card-body">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col-2 p-0 mb-3" style="width: 18rem;">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/1800852064711433998/B4D121986254F16F353654D0FF458439A77BEFF3/?imw=450&impolicy=Letterbox"
+                    class="card-img-top" alt="..." height="150px">
+                <div class="card-body">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col-2 p-0 mb-3" style="width: 18rem;">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/1800852064711433998/B4D121986254F16F353654D0FF458439A77BEFF3/?imw=450&impolicy=Letterbox"
+                    class="card-img-top" alt="..." height="150px">
+                <div class="card-body">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col-2 p-0 mb-3" style="width: 18rem;">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/1800852064711433998/B4D121986254F16F353654D0FF458439A77BEFF3/?imw=450&impolicy=Letterbox"
+                    class="card-img-top" alt="..." height="150px">
+                <div class="card-body">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col-2 p-0 mb-3" style="width: 18rem;">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/1800852064711433998/B4D121986254F16F353654D0FF458439A77BEFF3/?imw=450&impolicy=Letterbox"
+                    class="card-img-top" alt="..." height="150px">
+                <div class="card-body">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
 
+    </div>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
